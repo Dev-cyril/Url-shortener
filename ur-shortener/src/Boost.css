@@ -1,0 +1,32 @@
+.boost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: url(./images/bg-boost-desktop.svg);
+    gap: 20px;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.boost h3{
+    color: #fff;
+}
+.boost button{
+    width: 175px;
+    border-radius: 25px;
+}
+@media (max-width: 767px) {
+    .boost{
+        background: url(./images//bg-boost-mobile.svg);
+        background-color: hsl(257, 27%, 26%);
+    }
+    .boost h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,72 @@
+footer{
+    background-color: hsl(255, 11%, 22%);
+}
+footer > div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+footer img{
+    width: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+.nav-links div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+}
+.nav-links p{
+    color: #fff;
+    font-weight: 700;
+}
+.social-media{
+    display: flex;
+    height: 20px;
+    gap: 15px;
+}
+.social-media svg:hover path{
+    fill: hsl(180, 96%, 29%);
+}
+footer a{
+    color: hsl(0, 0%, 75%);
+    font-weight: 700;
+    text-decoration: none;
+}
+footer a:hover{
+    color: hsl(180, 96%, 29%);
+}
+@media (max-width: 767px) {
+    footer>div {
+        flex-direction: column;
+        width: 60%;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .nav-links div{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .social-media{
+        margin: 40px auto;
+    }
+    svg{
+        margin: auto
+    }
+}
+@media (max-width: 370px) {
+    footer>div {
+        width: 40%;
+    }
+}

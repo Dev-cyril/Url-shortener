@@ -1,0 +1,99 @@
+.stat{
+    display: flex;
+    padding: 140px 0 50px;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 75%, 0.185);
+}
+.statText{
+    text-align: center;
+    margin: 30px 0;
+}
+.cards-container{
+    display: flex;
+    width: 80%;
+    margin: 100px auto 20px;
+    justify-content: center;
+}
+h3 {
+    color: hsl(260, 8%, 14%);
+    font-size: 2.7rem;
+    margin: 0;
+}
+h4{
+    color: hsl(260, 8%, 14%);
+    font-size: 1.3rem;
+}
+.statText p {
+    color: hsl(0, 0%, 75%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.cards{
+    width: 30%;
+    padding: 0 30px 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 230px;
+}
+.cards p{
+    color: hsl(0, 0%, 75%);
+    font-weight: 700;
+}
+.cards img{
+    width: 40px;
+}
+.cards div{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(255, 11%, 22%);
+    margin-top: -30px;
+}
+.chain{
+    width: 40px;
+    height: 10px;
+    margin: auto;
+    background-color: hsl(180, 66%, 49%);
+}
+.three{
+    margin-top: 50px;
+}
+.one {
+    margin-top: -40px;
+}
+@media (max-width: 767px){
+    .cards-container {
+        flex-direction: column;
+    }
+    .cards{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+    .three {
+        margin-top: 0;
+    }
+
+    .one {
+        margin-top: 0;
+    }
+    .chain {
+       height : 60px;
+       width : 10px;
+    }
+    .cards div {
+        margin: -30px auto 3px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .statText p  {
+        font-size: 1rem;
+    }
+    .statText{
+        padding: 20px;
+    }
+}

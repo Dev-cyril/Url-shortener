@@ -1,0 +1,175 @@
+.section {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.search {
+    width: 96%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: url(./images/bg-shorten-desktop.svg);
+    gap: 20px;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -60px;
+    z-index: 1;
+}
+
+.search div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.input {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.p {
+    display: none;
+}
+.mobile{
+    display: none;
+}
+.desktop {
+    display: block;
+    margin: 0;
+}
+
+.empty {
+    border: 1px solid red;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.empty::placeholder,
+.desktop, .mobile {
+    color: rgba(255, 0, 0, 0.562);
+}
+
+.search button {
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.links-container {
+    display: flex;
+    width: 85%;
+    margin: -50px auto 0;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.oldLink {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.newLink {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    text-align: justify;
+    justify-content: space-between;
+    align-items: center;
+}
+.newLink p {
+    color: hsl(180, 66%, 49%);
+}
+.Copy {
+    width: 105px;
+    border-radius: 7px;
+}
+
+.copied {
+    width: 115px;
+    border-radius: 7px;
+    background-color: hsl(257, 27%, 26%);
+}
+
+.copied:hover {
+    background-color: hsl(257, 27%, 26%);
+}
+
+@media (max-width: 767px) {
+    .search {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(./images/bg-shorten-mobile.svg);
+        background-color: hsl(257, 27%, 26%);
+        margin: auto auto -100px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .input,
+    .search button {
+        width: 85%;
+    }
+    .links {
+        flex-direction: column;
+    }
+    .links-container{
+        margin-top: 5px;
+    }
+
+    .oldLink {
+        width: 100%;
+        border-bottom: 1px solid grey;
+    }
+
+    .newLink {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .Copy, .copied {
+        width: 100%;
+        border-radius: 7px;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;;
+    }
+
+}
